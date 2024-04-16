@@ -96,8 +96,7 @@ class HomePage1 extends StatelessWidget {
               },
               separatorBuilder: (context, index) {
                 if (index % 4 == 3) {
-                  return Text(
-                    "      Fri, February 7",
+                  return Text(                   "      Fri, February 7",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   );
                 } else {
