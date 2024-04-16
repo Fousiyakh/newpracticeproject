@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prcticeprject/screen/home%20page1.dart';
 import 'package:prcticeprject/screen/signpage1.dart';
 import 'package:prcticeprject/screen/splash page1.dart';
 
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget{
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner:false ,
-      home: Splashpage1(),
+      ///home: Splashpage1(),
+      home: HomePage1(),
 
     );
   }

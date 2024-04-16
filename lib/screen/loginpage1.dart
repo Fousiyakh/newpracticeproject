@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +27,7 @@ class loginPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: NetworkImage(
+                      image: AssetImage(
                           'https://images.unsplash.com/photo-1491147334573-44cbb4602074?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
                     )),
               ),
