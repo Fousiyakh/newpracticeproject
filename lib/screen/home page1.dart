@@ -4,6 +4,7 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../model/plant model.dart';
+import '../singlr screen plant app.dart';
 
 class HomePage1 extends StatelessWidget {
   List<Plant> products = [
@@ -54,45 +55,50 @@ class HomePage1 extends StatelessWidget {
           ),
           body: ListView.separated(
               itemBuilder: (context, index) {
-                return Padding(
-                    padding: EdgeInsets.all(5),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius:BorderRadius.circular(20) ,
-                        image: DecorationImage(fit: BoxFit.cover,
-                            image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7vV0fD3JlcHkJnkZWma0ow1ZoeS_KxTBmxQ5KWOFYA&s"))
-                      ),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Expanded(
-                                child: Image.asset('${products[index].image}')),
-                            Expanded(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    '${products[index].Name}',
-                                    style: GoogleFonts.afacad(),
-                                  ),
-                                  Text(
-                                    '${products[index].quantity}',
-                                    style: GoogleFonts.afacad(),
-                                  )
-                                ],
+                return GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(product: products[index],)));
+                  },
+                  child: Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius:BorderRadius.circular(20) ,
+                          image: DecorationImage(fit: BoxFit.cover,
+                              image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7vV0fD3JlcHkJnkZWma0ow1ZoeS_KxTBmxQ5KWOFYA&s"))
+                        ),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(
+                                  child: Image.asset('${products[index].image}')),
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '${products[index].Name}',
+                                      style: GoogleFonts.afacad(),
+                                    ),
+                                    Text(
+                                      '${products[index].quantity}',
+                                      style: GoogleFonts.afacad(),
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            Expanded(
-                              child: CircleAvatar(
-                                  backgroundColor: Colors.lightGreen,
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.water_drop_outlined),
-                                  )),
-                            )
-                          ]),
-                    ));
+                              Expanded(
+                                child: CircleAvatar(
+                                    backgroundColor: Colors.lightGreen,
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.water_drop_outlined),
+                                    )),
+                              )
+                            ]),
+                      )),
+                );
               },
               separatorBuilder: (context, index) {
                 if (index % 4 == 3) {

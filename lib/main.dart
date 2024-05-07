@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner:false ,
       ///home: Splashpage1(),
 
-      ///home: HomePage1(),
-      home: Toursim(),
+      home: HomePage1(),
+     /// home: Toursim(),
 
     );
   }

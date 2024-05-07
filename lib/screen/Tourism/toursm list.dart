@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:prcticeprject/screen/Tourism/tourism%20detail%20page.dart';
 
 import '../../model/toursm model.dart';
@@ -25,19 +25,19 @@ class Toursim extends StatelessWidget {
               height: 100,
               fit: BoxFit.cover,
             ),
-            title: Text(countries[index].name!),
-            /*onTap: () {
+           title: Text( countries[index].name!),
+            onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => TourismDetail(country: countries[index]),
                 ),
               );
-            },*/
+            },
           );
         },
       ),
     );
   }
-}
+} */
 
