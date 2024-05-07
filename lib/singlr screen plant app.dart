@@ -14,7 +14,7 @@ Widget build(BuildContext context) {
     body: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset('${products[index].image}'),
+        Image.asset(product.image),
         SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
