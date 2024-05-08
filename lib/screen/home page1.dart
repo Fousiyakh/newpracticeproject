@@ -4,7 +4,7 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../model/plant model.dart';
-import '../singlr screen plant app.dart';
+import 'singlr screen plant app.dart';
 
 class HomePage1 extends StatelessWidget {
   List<Plant> products = [
