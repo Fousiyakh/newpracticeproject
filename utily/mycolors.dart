@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyColors{
-  static Color basicColor = const Color(0xf0f051);
+  static Color basicColor = const Color(0x00f0f051);
   static Color textColor = const Color(0xFF360822);
   static Color textwhite = Colors.white;
   static Color iconColors = Colors.pink;

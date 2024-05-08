@@ -11,23 +11,31 @@ class HomePage1 extends StatelessWidget {
     Plant(
         image: "assets/image/plantimage1.png",
         Name: "Filodendro Atom",
-        quantity: '💧 100 ml'),
+        quantity: '💧 100 ml',
+        description: "The Filodendor 'Atom' is an elegant, ever- expnding interior evergreen , perfect for creting a beautiful green corner in the house thanks to the wonderful ornaments "),
+
     Plant(
         image: "assets/image/plantremovebackgrnd.png",
         Name: "Monstera Deliciosa",
-        quantity: '💧 100 ml'),
+        quantity: '💧 100 ml',
+  description: "The Filodendor 'Atom' is an elegant, ever- expnding interior evergreen , perfect for creting a beautiful green corner in the house thanks to the wonderful ornaments "),
     Plant(
         image: "assets/image/plantremvbg.png",
         Name: "Chlorophytum",
-        quantity: '💧100 ml'),
+        quantity: '💧100 ml',
+        description: "The Filodendor 'Atom' is an elegant, ever- expnding interior evergreen , perfect for creting a beautiful green corner in the house thanks to the wonderful ornaments "),
+
     Plant(
         image: "assets/image/plantimage1.png",
         Name: "Kentiapalm",
-        quantity: '💧100 ml'),
+        quantity: '💧100 ml',
+  description: "The Filodendor 'Atom' is an elegant, ever- expnding interior evergreen , perfect for creting a beautiful green corner in the house thanks to the wonderful ornaments "),
+
     Plant(
         image: "assets/image/plant6.png",
         Name: "Peperomia Obtusifolia",
-        quantity: '💧100 ml'),
+        quantity: '💧100 ml',
+        description: "The Filodendor 'Atom' is an elegant, ever- expnding interior evergreen , perfect for creting a beautiful green corner in the house thanks to the wonderful ornaments "),
   ];
 
   @override
